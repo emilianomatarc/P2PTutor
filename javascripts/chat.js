@@ -70,7 +70,7 @@ var roomid;
   var localVideo = document.querySelector('#localVideo');
   var remoteVideo = document.querySelector('#remoteVideo');
 
-  var room = location.pathname.substring(1);
+  var room = '';
   
   var socket = io.connect();
 
