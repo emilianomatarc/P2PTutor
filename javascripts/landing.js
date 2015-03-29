@@ -29,3 +29,75 @@ $(function() {
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+var v='I love you';
+function hi() {
+    console.log(v);
+    var v='you love me';
+    return bar
+    var bar =10;
+    function bar () {
+        
+    }
+    var foo= function () {
+        console.log('this is foo')
+    }
+
+}
+console.log(typeof hi());
+
+function swap (items, a, b){
+    var temp=items[b];
+    items[b]=items[a];
+    items[a]=temp;
+}
+
+function partition (array, left, right) {
+    var pivot=array[Math.round((left+right)/2)]
+    while(left<right){
+        while(array[left]<pivot){
+            left++;
+        }
+
+        while(array[right]>pivot){
+            right--;
+        }
+        if(left<=right){
+            swap(array, left, right);
+            left++;
+            right--;
+        }
+    }
+    return left;
+}
+
+function quicksort(array, left, right){
+    if(!array&&array.length<=1){
+        return;
+    }
+    var index=partition(array, left, right);
+
+    if(left<index-1){
+        quicksort(array,left, index-1);
+    }
+
+    if(right>index){
+        quicksort(array,index, right);
+    }
+}
+
+
+var dog=function  () {
+    return 'hello';
+}
+// var i=0;
+// while(i<10){
+//     setTimeout(function(){
+//         var j=0;
+//         while(j<i){
+//             console.log(dog());
+//             j++;
+//         }
+//         i++;
+//     }, 1000)
+// }
